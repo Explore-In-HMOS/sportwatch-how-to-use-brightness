@@ -1,0 +1,30 @@
+<div class="container">
+    <text class="title">
+        Brightness
+    </text>
+
+    <text class="status">
+        {{ status }}
+    </text>
+
+    <div class="list-container">
+        <input type="button"
+               style="width: 280px; margin: 6px 0px; font-size: 20px; background-color: darkslategray;
+                       padding: 0px 12px; border-radius: 8px;"
+               class="input" on:click="getVal">Get value</input>
+        <input type="button"
+               style="width: 280px; margin: 6px 0px; font-size: 20px; background-color: darkslategray;
+                       padding: 0px 12px; border-radius: 8px;"
+               class="input" on:click="setVal">Set value</input>
+
+        <input type="button"
+               style="width: 280px; margin: 6px 0px; font-size: 20px; background-color: darkslategray;
+                       padding: 0px 12px; border-radius: 8px;"
+               class="input" on:click="setKeepScreenOn">Keep Screen On</input>
+
+        <input type="button"
+               style="width: 280px; margin: 6px 0px; font-size: 20px; background-color: darkslategray;
+                       padding: 0px 12px; border-radius: 8px;"
+               class="input" on:click="setKeepScreenOff">Disable Keep Screen On</input>
+    </div>
+</div>
