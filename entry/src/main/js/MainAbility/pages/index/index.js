@@ -7,32 +7,28 @@ export default {
 
     getVal() {
         Brightness.getValue({
-            success: (data) => this.status = 'Brightness:' + data.value,
-            fail: (err, code) => console.error('Failed to get brightness' + err + code),
+            success: (data) => this.status = `Brightness: ${data.value}`
         });
     },
 
     setVal() {
         Brightness.setValue({
             value: 180,
-            success: () => this.status = 'Brightness set to 180',
-            fail: (err, code) => console.error('Failed to set brightness' + err + code),
+            success: () => this.status = 'Brightness set to 180'
         });
     },
 
     setKeepScreenOn() {
         Brightness.setKeepScreenOn({
             keepScreenOn: true,
-            success: () => this.status = 'Screen will stay on',
-            fail: (err, code) => console.error('Failed to setKeepScreenOn' + err + code),
+            success: () => this.status = 'Screen will stay on'
         });
     },
 
     setKeepScreenOff() {
         Brightness.setKeepScreenOn({
             keepScreenOn: false,
-            success: () => this.status = 'Screen will stay off',
-            fail: (err, code) => console.error('Failed to setKeepScreenOff' + err + code),
+            success: () => this.status = 'Screen will stay off'
         });
-    },
+    }
 };

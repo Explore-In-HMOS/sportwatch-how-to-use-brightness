@@ -21,9 +21,10 @@ You can refer this application to learn how to use brightness for Huawei Sport W
 - **Tools**: DevEco Studio Vers 5.1.0.842
 - **Libraries**: @system.brightness
 
+# Directory Structure
 ```
  config.json
-│   
+│
 ├───js
 │   └───MainAbility
 │       │   app.js
